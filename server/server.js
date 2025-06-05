@@ -8,7 +8,7 @@ import userRouter from "./routes/userRoute.js";
 const app = express();
 const port=process.env.PORT || 4000;
 connectDB();
-const allowesOrgin =['http://localhost:5173' , "https://mern-auth-backend.onrender.com"]
+const allowesOrgin =['http://localhost:5173' , "https://mern-auth-backend-bz48.onrender.com"]
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin: allowesOrgin ,credentials: true}));
